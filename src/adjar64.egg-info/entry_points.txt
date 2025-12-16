@@ -1,0 +1,2 @@
+[console_scripts]
+adjar64-gui = adjar64.gui:launch

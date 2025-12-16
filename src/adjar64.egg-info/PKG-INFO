@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: adjar64
+Version: 0.1.0
+Summary: 64-bit ADJAR overlap correction (Woldorff-style) with optional PySide6 GUI
+Author: ADJAR_64BIT Project
+License: MIT
+Keywords: EEG,ERP,ADJAR,deconvolution,overlap,Woldorff
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Requires-Dist: scipy>=1.10
+Requires-Dist: matplotlib>=3.7
+Provides-Extra: gui
+Requires-Dist: PySide6>=6.6; extra == "gui"
+Provides-Extra: eeg
+Requires-Dist: mne>=1.6; extra == "eeg"
+Provides-Extra: speed
+Requires-Dist: numba>=0.59; extra == "speed"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"
+Requires-Dist: ruff>=0.6.0; extra == "dev"
+Requires-Dist: mypy>=1.8; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Provides-Extra: packaging
+Requires-Dist: pyinstaller>=6.0; extra == "packaging"
